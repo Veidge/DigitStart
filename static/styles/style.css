@@ -1,0 +1,10 @@
+span {
+    font-style: italic;
+    /* background-color: beige; */
+}
+
+.bold-text {
+    font-weight: bold;
+}
+/* класс для дополненных настроек span */
+
