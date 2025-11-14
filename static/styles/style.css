@@ -1,17 +1,19 @@
-* {
+body {
     margin: 0;
 }
+
 p {
     font-size: 14pt;
     margin-left: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 h1 {
     font-size: 32px;
-    background-color: mediumslateblue;
-    color:azure;
-    padding: 15px;
-    text-align: center;
+    padding-top: 10px;
+    margin: 10px;
+    margin-bottom: 25pt;
 }
 
 h2 {
@@ -23,30 +25,159 @@ h2 {
 h3 {
     background-color: mediumslateblue;
     color:azure;
-    padding: 15px;
+    padding: 10px;
+    margin: 10pt;
     text-align: center;
+
 }
 
 h4 {
     padding: 10pt;
-    text-align: right;
+    text-align: center;
 }
 
 h5 {
-    padding: 15pt;
+    padding: 5pt;
+    font-size: 14pt;
+    margin: 5px;
+}
+
+table {
+    width: 1100px;
+    border-top: 7px solid rgb(43, 129, 17);
+    border-collapse: collapse;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #dddddd;
+}
+
+td {
+    text-align: left;
+	padding: 10px;
+	border: 3px solid rgb(43, 129, 17);
+}
+ th {
+  text-align: center;
+  padding: 10px;
+	border: 3px solid rgb(43, 129, 17);
+ }
+
+ .experts {
+    margin: 10pt;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    text-align: center;
+    justify-content: space-between;
+
+ }
+
+.expert-title {
     text-align: center;
 }
 
+.expert-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 5px;
+}
+
+.expert-card {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ .rectangle { 
+    width: 250px; 
+    height: 80px; 
+    padding-top: 10pt;
+    background-color: #3498db;
+    text-align: left;
+    color: rgb(21, 22, 23);
+}
+
+#triangle_left {  
+    position: relative;
+    width: 0;  
+    height: 0;  
+    margin-left: 45px;
+    border-top: 47.5px solid transparent;  
+    border-right: 50px solid #3498db;  
+    border-bottom: 47px solid transparent;  
+}  
+
+.circle { 
+    position: absolute;
+    width: 90px; 
+    height: 90px; 
+    border-radius: 100%; 
+    background-color: #81a6be; 
+}
+
+
+
 .head {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin-top: 25pt;
     margin-bottom: 15pt;
     font-size: 20px;
+}
+
+.head>ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.head>ul>li {
+    display: block;
+    padding: 5pt;
+    padding-left: 15pt;
+    padding-right: 15pt;
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.name {
+    background-color: mediumslateblue;
+    color:azure;
+    text-align: center;
+    padding-bottom: 10pt;
+    padding-top: 5px;
+}
+
+.name-logo {
+    display: block;
+    justify-content: center;
+    text-align: center;
+}
+
+.name-logo>img {
+    float: left;
+    margin-left: 10pt;
+    margin-top: 5pt;
+    margin-bottom: 15pt;
+}
+
+.slogan {
+    display: inline-block;
+    text-align: left;
+    justify-content: left;
+    padding: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 span {
     padding: 5pt;
     margin-left: 10pt;
+    margin-right: 10pt;
 }
 
 .partners-card {
@@ -56,6 +187,12 @@ span {
     background-color: rgb(196, 205, 205);
     border-style: solid;
     border-width: 0.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.partners-card>p {
+    font-size: 14pt;
 }
 
 .partners>img {
@@ -70,12 +207,6 @@ span {
     padding: 0pt;
 }
 
-.guests-card {
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(196, 205, 205);
-}
 
 .guests {
     text-align: center;
@@ -85,9 +216,176 @@ span {
     padding: 0pt;
 }
 
+.guests-card {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(196, 205, 205);
+}
+
+.prize {
+    display: block;
+    text-align: center;
+
+}
+
+.prize-card {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(196, 205, 205);
+}
+
+.prize-card>img {
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.participation {
+    display: block;
+    text-align: center;
+    margin: 5pt;
+}
+
+.invites {
+    display: inline-block;
+}
+
+.invite {
+    border-style: solid;
+    border-width: 0.8px;
+    width: 500px;
+    height: 100px;
+    padding: 10pt;
+    margin-bottom: 15pt;
+    margin-top: 15pt;
+    text-align: left;
+}
+
+.invite-group {
+    display: inline-block;
+    justify-content: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.request1 {
+    display: flex;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    margin-left: 17%;
+}
+
+.request2 {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+
+}
+
+.request>p {
+    font-weight: bold;
+}
+
+.req-btn1 {
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.5px;
+    margin: 10pt;
+    padding: 15px;
+}
+
+.req-btn2 {
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.5px;
+    text-align: center;
+    justify-content: center;
+    margin: 10pt;
+    padding: 15px;
+}
+
+.req-btn>p {
+    margin-left: 0px;
+    font-size: 17pt;
+}
+
+.about {
+    text-align: center;
+    margin: 0pt;
+    margin-top: 25pt;
+    margin-bottom: 25pt;
+    padding: 0pt;
+}
+
+.about-info1 {
+    display: block;
+    margin-right: 40%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(196, 205, 205);
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.about-info2 {
+    display: block;
+    margin-left: 60%;
+    padding: 10px;
+    text-align: right;
+    background-color: rgb(196, 205, 205);
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.about-info3 {
+    display: block;
+    margin-right: 40%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(196, 205, 205);
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.about-info3>h6 {
+    text-align: center;
+    font-size: 13pt;
+    margin: 0;
+    margin-top: 5px;
+    font-weight: lighter;
+}
+
+.nominations {
+    display: block;
+    text-align: center;
+}
+
+.help-mail {
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    font-style: italic;
+}
+
+.help-mail>p {
+    font-size: 14pt;
+}
+
+.help-mail>p>span {
+    font-size: 15pt;
+    font-weight: bold;
+    padding: 2pt;
+    margin: 0;
+}
+
 .contacts {
     padding: 5pt;
-    text-align: right;
+    text-align: center;
 }
 
 .conts {
@@ -98,6 +396,33 @@ span {
 
 .end {
     display: inline-block;
-    text-align: left;
+    text-align: center;
     padding: 15pt;
+    padding-left: 50pt;
+}
+
+.end-page {
+    display: block;
+    padding-left: 0px;
+    justify-content: flex-end;
+    margin-top: 15pt;
+    margin-left: 69%;
+    margin-bottom: 0pt;
+    margin-right: 10pt;
+    text-align: center;
+}
+
+.left-end {
+    padding-left: 15pt;
+    margin: 15pt;
+    text-align: left;
+}
+
+
+
+
+@media (max-width: 900px){
+    .head {
+        flex-direction: column;
+    }
 }
