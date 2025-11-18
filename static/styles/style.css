@@ -42,6 +42,12 @@ h5 {
     margin: 5px;
 }
 
+span {
+    padding: 5pt;
+    margin-left: 10pt;
+    margin-right: 10pt;
+}
+
 table {
     width: 1100px;
     border-top: 7px solid rgb(43, 129, 17);
@@ -58,67 +64,11 @@ td {
 	padding: 10px;
 	border: 3px solid rgb(43, 129, 17);
 }
- th {
-  text-align: center;
-  padding: 10px;
+th {
+    text-align: center;
+    padding: 10px;
 	border: 3px solid rgb(43, 129, 17);
- }
-
- .experts {
-    margin: 10pt;
-    margin-top: 20pt;
-    margin-bottom: 20pt;
-    text-align: center;
-    justify-content: space-between;
-
- }
-
-.expert-title {
-    text-align: center;
 }
-
-.expert-info {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    margin-left: 5px;
-}
-
-.expert-card {
-    display: flex;
-    margin-left: 5%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
- .rectangle { 
-    width: 250px; 
-    height: 80px; 
-    padding-top: 10pt;
-    background-color: #3498db;
-    text-align: left;
-    color: rgb(21, 22, 23);
-}
-
-#triangle_left {  
-    position: relative;
-    width: 0;  
-    height: 0;  
-    margin-left: 45px;
-    border-top: 47.5px solid transparent;  
-    border-right: 50px solid #3498db;  
-    border-bottom: 47px solid transparent;  
-}  
-
-.circle { 
-    position: absolute;
-    width: 90px; 
-    height: 90px; 
-    border-radius: 100%; 
-    background-color: #81a6be; 
-}
-
-
 
 .head {
     display: flex;
@@ -174,121 +124,12 @@ td {
     margin-bottom: 5px;
 }
 
-span {
-    padding: 5pt;
-    margin-left: 10pt;
-    margin-right: 10pt;
-}
-
-.partners-card {
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(196, 205, 205);
-    border-style: solid;
-    border-width: 0.5px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-
-.partners-card>p {
-    font-size: 14pt;
-}
-
-.partners>img {
-    max-width: 500px;
-}
-
-.partners {
-    text-align: center;
-    margin: 0pt;
-    margin-top: 25pt;
-    margin-bottom: 25pt;
-    padding: 0pt;
-}
-
-
-.guests {
-    text-align: center;
-    margin: 0pt;
-    margin-top: 25pt;
-    margin-bottom: 25pt;
-    padding: 0pt;
-}
-
-.guests-card {
-    display: inline-block;
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(196, 205, 205);
-}
-
-.prize {
-    display: block;
-    text-align: center;
-
-}
-
-.prize-card {
-    display: inline-block;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    background-color: rgb(196, 205, 205);
-}
-
-.prize-card>img {
-    border-style: solid;
-    border-width: 0.5px;
-}
-
-.participation {
-    display: block;
-    text-align: center;
-    margin: 5pt;
-}
-
-.invites {
-    display: inline-block;
-}
-
-.invite {
-    border-style: solid;
-    border-width: 0.8px;
-    width: 500px;
-    height: 100px;
-    padding: 10pt;
-    margin-bottom: 15pt;
-    margin-top: 15pt;
-    text-align: left;
-}
-
-.invite-group {
-    display: inline-block;
-    justify-content: left;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 .request1 {
     display: flex;
     text-align: center;
     padding: 5px;
     margin: 5px;
     margin-left: 17%;
-}
-
-.request2 {
-    display: block;
-    text-align: center;
-    padding: 5px;
-    margin: 5px;
-    font-weight: bold;
-
-}
-
-.request>p {
-    font-weight: bold;
 }
 
 .req-btn1 {
@@ -299,27 +140,16 @@ span {
     padding: 15px;
 }
 
-.req-btn2 {
-    display: inline-block;
-    border-style: solid;
-    border-width: 0.5px;
-    text-align: center;
-    justify-content: center;
-    margin: 10pt;
-    padding: 15px;
-}
-
-.req-btn>p {
-    margin-left: 0px;
-    font-size: 17pt;
-}
-
 .about {
     text-align: center;
     margin: 0pt;
     margin-top: 25pt;
     margin-bottom: 25pt;
     padding: 0pt;
+}
+
+.about>h2 {
+    padding: 15pt;
 }
 
 .about-info1 {
@@ -365,6 +195,191 @@ span {
     text-align: center;
 }
 
+.nominations>h2 {
+    padding: 15pt;
+}
+
+.experts {
+    margin: 10pt;
+    margin-top: 20pt;
+    margin-bottom: 20pt;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+
+.expert-title {
+    text-align: center;
+}
+
+.expert-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    margin-left: 5px;
+}
+
+.expert-card {
+    display: flex;
+    margin-left: 5%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+ .rectangle { 
+    width: 250px; 
+    height: 80px; 
+    padding-top: 10pt;
+    background-color: #3498db;
+    text-align: left;
+    color: rgb(21, 22, 23);
+}
+
+#triangle_left {  
+    position: relative;
+    width: 0;  
+    height: 0;  
+    margin-left: 45px;
+    border-top: 47.5px solid transparent;  
+    border-right: 50px solid #3498db;  
+    border-bottom: 47px solid transparent;  
+}  
+
+.circle { 
+    position: absolute;
+    width: 90px; 
+    height: 90px; 
+    border-radius: 100%; 
+    background-color: #81a6be; 
+}
+
+.partners {
+    text-align: center;
+    margin: 0pt;
+    margin-top: 25pt;
+    margin-bottom: 25pt;
+    padding: 0pt;
+}
+
+.partners>img {
+    max-width: 500px;
+}
+
+.partners-card {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(196, 205, 205);
+    border-style: solid;
+    border-width: 0.5px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+.partners-card>p {
+    font-size: 14pt;
+}
+
+.guests {
+    text-align: center;
+    margin: 0pt;
+    margin-top: 25pt;
+    margin-bottom: 25pt;
+    padding: 0pt;
+}
+
+.guests-card {
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(196, 205, 205);
+}
+
+.prize {
+    display: block;
+    text-align: center;
+
+}
+
+.prize>h2 {
+    padding: 15pt;
+}
+
+.prize-card {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    background-color: rgb(196, 205, 205);
+}
+
+.prize-card>img {
+    border-style: solid;
+    border-width: 0.5px;
+}
+
+.participation {
+    display: block;
+    text-align: center;
+    margin: 5pt;
+}
+
+.participation>h2 {
+    padding: 15pt;
+}
+
+.invites {
+    display: inline-block;
+}
+
+.invite {
+    border-style: solid;
+    border-width: 0.8px;
+    width: 500px;
+    height: 100px;
+    padding: 10pt;
+    margin-bottom: 15pt;
+    margin-top: 15pt;
+    text-align: left;
+}
+
+.invite-group {
+    display: inline-block;
+    justify-content: left;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+.request2 {
+    display: block;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    font-weight: bold;
+
+}
+
+.request>p {
+    font-weight: bold;
+}
+
+.req-btn2 {
+    display: inline-block;
+    border-style: solid;
+    border-width: 0.5px;
+    text-align: center;
+    justify-content: center;
+    margin: 10pt;
+    padding: 15px;
+}
+
+.req-btn>p {
+    margin-left: 0px;
+    font-size: 17pt;
+}
+
 .help-mail {
     display: inline;
     text-align: center;
@@ -383,6 +398,27 @@ span {
     margin: 0;
 }
 
+.sole {
+    background-color:#dddddd;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.end-page {
+    display: block;
+    width: 25%;
+    padding-left: 0px;
+    padding-bottom: 0px;
+    justify-content: flex-end;
+    margin-top: 15pt;
+    margin-bottom: 0pt;
+    margin-right: 10pt;
+    text-align: center;
+}
+
 .contacts {
     padding: 5pt;
     text-align: center;
@@ -394,28 +430,36 @@ span {
     margin-bottom: 10pt;
 }
 
-.end {
+.conts>p {
+    padding-bottom: 10pt;
+}
+
+.left-end {
+    width: 70%;
+    justify-content: center;
+    padding-left: 15pt;
+    margin: 15pt;
+    margin-bottom: 0pt;
+    padding-bottom: 15pt;
+    text-align: left;
+}
+
+.left-end>p {
+    margin-bottom: 15pt;
+    text-align: center;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+.left-end>iframe {
+    margin:0 auto;
+}
+
+.copyright {
     display: inline-block;
     text-align: center;
     padding: 15pt;
     padding-left: 50pt;
-}
-
-.end-page {
-    display: block;
-    padding-left: 0px;
-    justify-content: flex-end;
-    margin-top: 15pt;
-    margin-left: 69%;
-    margin-bottom: 0pt;
-    margin-right: 10pt;
-    text-align: center;
-}
-
-.left-end {
-    padding-left: 15pt;
-    margin: 15pt;
-    text-align: left;
 }
 
 

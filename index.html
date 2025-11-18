@@ -6,6 +6,11 @@
         <title>Цифровой старт</title>
         <link rel="stylesheet" href="static/styles/style.css"> 
         <style>
+            a {
+                text-decoration: none;
+            }
+        </style>
+        <style>
             .round {
                 width: 90px; height: 90px; /* Ширина и высота */
                 border-radius: 50%; /* Превращаем в круг */
@@ -16,18 +21,18 @@
         
     </head>
     <body>
-        <div >
-            <div class="head">
-                <ul>
-                    <li><a href="#">О НАС</a></li>
-                    <li><a href="#">НОМИНАЦИИ</a></li>
-                    <li><a href="#">НАГРАЖДЕНИЕ</a></li>
-                    <li><a href="#">УЧАСТИЕ</a></li>
-                    <li><a href="#" target="_blank">ПОЛОЖЕНИЕ О КОНФЕРЕНЦИИ</a></li>
-                </ul>
-            </div>
+        <!-- Шапка (навигация) -->
+        <div class="head">
+            <ul>
+                <li><a href="#about-id">О НАС</a></li>
+                <li><a href="#noms-id">НОМИНАЦИИ</a></li>
+                <li><a href="#prize-id">НАГРАЖДЕНИЕ</a></li>
+                <li><a href="#part-id">УЧАСТИЕ</a></li>
+                <li><a href="#" target="_blank">ПОЛОЖЕНИЕ О КОНФЕРЕНЦИИ</a></li>
+            </ul>
         </div>
 
+        <!-- Обложка (название, лого) -->
         <div class="name">
             <div class="name-logo">
                 <img src="static/pictures/cryptonit_without_back.png" alt="Логотип" width="50" height="75">
@@ -36,19 +41,22 @@
             <h3>конференция студенческих IT-проектов в Вологде</h3>
         </div>
 
+        <!-- Слоганы (фразы) -->
         <div class="slogan">
             <h5>WIN IF “ЦИФРОВОЙ СТАРТ” ELSE “TRY AGAIN”</h5>
             <h5>С НАМИ ВАША ЗНАЧИМОСТЬ ВОЗРАСТЁТ КАК ЗНАЧИМОСТЬ 0 В ПРОГРАММИРОВАНИИ</h5>
         </div>
 
+        <!-- Кнопка подачи заявки -->
         <div class="request1">
             <div class="req-btn1">        
                 <p><span class="bold-text"><a href="https://forms.yandex.ru/u/6912fec7d046886fb6f9ca5e" target="_blank"> Подать заявку </a></span></p>
             </div>
         </div>
-        
+
+        <!-- Блок "О конференции" -->
         <div class="about">
-            <h2>О конференции</h2>
+            <h2 id="about-id">О конференции</h2>
 
             <div class="about-info1">
                 <p>Конференция «Цифровой старт» — это ключевое событие для студентов ИТ-специальностей среднего профессионального образования. 
@@ -69,8 +77,9 @@
 
         </div>
 
+        <!-- Блок "Номинации" (таблица) -->
         <div class="nominations">
-            <h2>Номинации</h2>
+            <h2 id="noms-id">Номинации</h2>
             <h5>Выберите секцию, которая наилучшим образом соответствует вашему проекту.</h5>
             
             <!-- ТАБЛИЦА -->
@@ -95,6 +104,7 @@
 
         </div>
         
+        <!-- Блок "Эксперты" (мелкие карточки) -->
         <div class="experts">
             <div class="expert-title">
                 <h2>Эксперты</h2>
@@ -135,8 +145,7 @@
             </div>
         </div>
 
-
-        <!-- КАРТОЧКИ -->
+        <!-- Блок "Партнёры" (карточки с рамкой) -->
          <div class="partners">
             <h2>Партнёры</h2>
             <div class="partners-card">
@@ -162,6 +171,7 @@
             </div>
         </div>
 
+        <!-- Блок "Почётные гости" (карточки без рамки) -->
         <div class="guests">
             <h2>Почётные гости</h2>
             <div class="guests-card">
@@ -189,11 +199,10 @@
 
             </div>
         </div>
-
-        <!-- КАРТОЧКИ -->
         
+        <!-- Блок "Награждение" (карточки с рамкой и фоном вокруг рамки) -->
         <div class="prize">
-            <h2>Награждение</h2>
+            <h2 id="prize-id">Награждение</h2>
             <h5>Мы ценим ваш труд и талант! Победители в каждой из пяти номинаций получат:</h5>
             <div class="prize-card">
                 <img src="https://www.lasorsa.com/wp-content/uploads/2016/09/Screen-Shot-2016-09-12-at-1.33.39-PM-1024x555.png" alt="Дмитрий Нагиев" width="330" height="200">
@@ -214,10 +223,9 @@
             </div>
         </div>
 
-        <!-- КАРТИНКИ С ПОДПИСЯМИ -->
-
+        <!-- Блок "Участие" (варианты участия, кнопка, таймер, доп. почта) -->
         <div class="participation">
-            <h2>Участие</h2>
+            <h2 id="part-id">Участие</h2>
             <div class="invites">
                 <div class="invite-group">
                     <div class="invite">
@@ -254,18 +262,24 @@
     
         </div>
 
-        <div class="end-page">
-            <h4>Контакты</h4>
-            <div class="contacts">
-                <div class="conts">
-                    <p>почта: contest@asandra.ru</p>
-                    <p>телефон: +79114454090</p>
+        <!-- "Подошва" сайта (контакты, адрес, копирайта) -->
+        <div class="sole">
+            <div class="bottom">
+                <div class="left-end">
+                    <p>Место проведения: г. Вологда, ул. Гагарина, 26.</p>
+                    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac6ed4dfd7ba38d45a058b405c28281032e23d62136fd0286d2cea0b356ac3ef6&amp;width=720&amp;height=380&amp;lang=ru_RU&amp;scroll=true"></script>            
+                </div>
+                <div class="end-page">
+                    <h4>Контакты</h4>
+                    <div class="contacts">
+                        <div class="conts">
+                            <p>почта: contest@asandra.ru</p>
+                            <p>телефон: +79114454090</p>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="left-end">
-            <p>Место проведения: г. Вологда, ул. Гагарина, 26.</p>
-            <div class="end">
+            <div class="copyright">
                 <p>© ООО «Асандра», 2025</p>
             </div>
         </div>
