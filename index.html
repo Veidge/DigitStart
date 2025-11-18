@@ -23,7 +23,7 @@
     <body>
         <!-- Шапка (навигация) -->
         <div class="head">
-            <ul>
+            <ul id="head-id">
                 <li><a href="#about-id">О НАС</a></li>
                 <li><a href="#noms-id">НОМИНАЦИИ</a></li>
                 <li><a href="#prize-id">НАГРАЖДЕНИЕ</a></li>
@@ -52,6 +52,10 @@
             <div class="req-btn1">        
                 <p><span class="bold-text"><a href="https://forms.yandex.ru/u/6912fec7d046886fb6f9ca5e" target="_blank"> Подать заявку </a></span></p>
             </div>
+        </div>
+
+        <div class="riseup">
+            <p><a href="#head-id">Вернуться</a></p>
         </div>
 
         <!-- Блок "О конференции" -->
@@ -149,21 +153,21 @@
          <div class="partners">
             <h2>Партнёры</h2>
             <div class="partners-card">
-                <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="190" height="190">
+                <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
                 <p>ООО "Логасофт ПЛЮС"</p>
 
                 <!-- КАРТОЧКИ -->
 
             </div>
             <div class="partners-card">
-                <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="190" height="190">
+                <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
                 <p>ООО "Логасофт ПЛЮС"</p>
 
                 <!-- КАРТОЧКИ -->
 
             </div>
             <div class="partners-card">
-                <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="190" height="190">
+                <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
                 <p>ООО "Логасофт ПЛЮС"</p>
 
                 <!-- КАРТОЧКИ -->
@@ -227,24 +231,42 @@
         <div class="participation">
             <h2 id="part-id">Участие</h2>
             <div class="invites">
-                <div class="invite-group">
-                    <div class="invite">
-                        <p>Вы хотите начать своё дело, но нет идей и мотивации?</p>
-                        <h5>На наших мероприятиях вы найдёте множество вариантов и идей!</h5>
+                <div class="invite-blocks">
+                    <div class="invite-group">
+                        <div class="invite">
+                            <details>
+                                <summary>
+                                    У Вас есть интересная задумка проекта, но нет команды для реализации?
+                                </summary>
+                                <h5>Наши мероприятия помогут найти Вам единомышленников!</h5>
+                            </details>
+                        </div>
+                        <div class="invite">
+                            <details>
+                                <summary>
+                                    Вы хотите начать своё дело, но нет идей и мотивации?
+                                </summary>
+                                <h5>На наших мероприятиях вы найдёте множество вариантов и идей!</h5>
+                            </details>
+                        </div>
                     </div>
-                    <div class="invite">
-                        <p>У Вас есть интересная задумка проекта, но нет команды для реализации?</p> 
-                        <h5>Наши мероприятия помогут найти Вам единомышленников!</h5>
-                    </div>
-                </div>
-                <div class="invite-group">
-                    <div class="invite">
-                        <p>Вы считаете, что ваш проект достоин большего?</p>
-                        <h5>Мы поможем Вам показать его всем!</h5>
-                    </div>
-                    <div class="invite">
-                        <p>Вам нужен проверенный совет от опытного и успешного человека?</p> 
-                        <h5>Эксперты и гости подскажут Вам, как поступить и что сделать!</h5>    
+                    <div class="invite-group">
+                        <div class="invite">
+                            <details>
+                                <summary>
+                                    Вы считаете, что ваш проект достоин большего, но Вас не замечают?
+                                </summary>
+                                <h5>Мы поможем Вам показать проект всем!</h5>
+                            </details>
+                        </div>
+                        <div class="invite">
+                            <details>
+                                <summary>
+                                    Вам нужен проверенный совет от опытного и успешного человека, но таких рядом с Вами нет?
+                                </summary>
+                                <h5>Эксперты и гости подскажут Вам, как поступить и что сделать!</h5>
+                            </details>
+                        </div>
                     </div>
                 </div>
                 <h5>Мы принимаем Вас всех!</h5>

@@ -141,6 +141,27 @@ th {
     padding: 15px;
 }
 
+.riseup {
+    --bgc: #3498db;
+    --br: 10px;
+    position: fixed;
+    bottom: 2%;
+    right: 1%;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: var(--br);
+    transition: 2s;
+    background-color:rgb(67, 133, 200, 0.1);
+    &:hover {
+        --bgc: #3c9ada;
+        --br: 40px;
+    }
+}
+
+.riseup>p {
+    margin: 0;
+}
+
 .about {
     text-align: center;
     margin: 0pt;
@@ -156,16 +177,19 @@ th {
 .about-info1 {
     display: block;
     margin-right: 40%;
+    margin-left: 10%;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     background-color: rgb(196, 205, 205);
     border-style: solid;
     border-width: 0.5px;
 }
 
+
 .about-info2 {
     display: block;
     margin-left: 60%;
+    margin-right: 10%;
     padding: 10px;
     text-align: right;
     background-color: rgb(196, 205, 205);
@@ -176,6 +200,7 @@ th {
 .about-info3 {
     display: block;
     margin-right: 40%;
+    margin-left: 10%;
     padding: 10px;
     text-align: center;
     background-color: rgb(196, 205, 205);
@@ -336,6 +361,7 @@ th {
 }
 
 .invite {
+    position: relative;
     border-style: solid;
     border-width: 0.8px;
     width: 500px;
@@ -346,6 +372,12 @@ th {
     text-align: left;
 }
 
+.invite-blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2);
+}
+
 .invite-group {
     display: inline-block;
     justify-content: left;
@@ -353,6 +385,14 @@ th {
     margin-right: 5px;
 }
 
+.invite>details>summary {
+    font-size: 14pt;
+}
+
+.invite>details>h5 {
+    position: absolute;
+    bottom: 0;
+}
 
 .request2 {
     display: block;
@@ -476,6 +516,11 @@ th {
         grid-template-rows: repeat(2);
         place-items: center;
         margin-left: 0px;
+    }
+    .invite-blocks {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4);
+        place-items: center;
     }
 }
 
