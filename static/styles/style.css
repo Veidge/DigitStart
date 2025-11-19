@@ -48,31 +48,45 @@ span {
     margin-right: 10pt;
 }
 
-table {
+.table-wrap {
+    text-align: center;
+    display: inline-block;
+    background-color: #fff;
+    padding: 2rem 2rem;
+    color: #000;
+}
+ 
+ table {
     width: 1000px;
-    border-top: 7px solid rgb(43, 129, 17);
+    border: 1px solid #ccc;
+    margin: auto;
+    padding:0;
     border-collapse: collapse;
-    text-align: center;
-    margin-bottom: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid #dddddd;
-    table-layout: fixed;
-}
-
-td {
-    text-align: left;
-	padding: 10px;
-	border: 3px solid rgb(43, 129, 17);
-}
-th {
-    text-align: center;
+    border-spacing: 0;
+  }
+ 
+  table tr {
+    border: 1px solid #ddd;
+    padding: 5px;
+  }
+ 
+  table th, table td {
     padding: 10px;
-	border: 3px solid rgb(43, 129, 17);
-}
+    text-align: left;
+    border-right: 1px solid #ddd;
+  }
+ 
+  table th {
+    color: #fff;
+    background-color: #444;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+  }
 
 .head {
     display: flex;
+    width: 100%;
     justify-content: center;
     text-align: center;
     margin-bottom: 15pt;
@@ -96,6 +110,7 @@ th {
 }
 
 .name {
+    width: 100%;
     background-color: mediumslateblue;
     color:azure;
     text-align: center;
@@ -177,30 +192,32 @@ th {
 .about-info1 {
     display: block;
     margin-right: 40%;
-    margin-left: 10%;
+    margin-left: 6%;
     padding: 10px;
     text-align: left;
     background-color: rgb(196, 205, 205);
     border-style: solid;
     border-width: 0.5px;
+    word-wrap: break-word;
 }
 
 
 .about-info2 {
     display: block;
     margin-left: 60%;
-    margin-right: 10%;
+    margin-right: 6%;
     padding: 10px;
     text-align: right;
     background-color: rgb(196, 205, 205);
     border-style: solid;
     border-width: 0.5px;
+    word-wrap: break-word;
 }
 
 .about-info3 {
     display: block;
     margin-right: 40%;
-    margin-left: 10%;
+    margin-left: 6%;
     padding: 10px;
     text-align: center;
     background-color: rgb(196, 205, 205);
@@ -214,6 +231,11 @@ th {
     margin: 0;
     margin-top: 5px;
     font-weight: lighter;
+}
+
+.about-info3>img {
+    width: 100%;
+    height: 100%;
 }
 
 .nominations {
@@ -356,6 +378,7 @@ th {
     padding: 15pt;
 }
 
+
 .invites {
     display: inline-block;
 }
@@ -495,6 +518,7 @@ th {
 
 .left-end>iframe {
     margin:0 auto;
+    width: 100%;
 }
 
 .copyright {
@@ -503,6 +527,7 @@ th {
     padding: 15pt;
     padding-left: 50pt;
 }
+
 
 
 
@@ -531,4 +556,71 @@ th {
         place-items: center;
         margin-left: 0px;
     }
+}
+
+@media (max-width: 1100px){
+    .menu-cont {
+        display: flex;
+    }
+
+    .menu-btn {
+        width: 65px;
+        height: 65px;
+        border: 5px solid rgb(0, 0, 0);
+        background-repeat: no-repeat;
+        background-size: 75%;
+        background-position: center;
+    }
+
+    .head>ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px) {
+  table {
+    border: 0;
+    width: 100%; 
+    margin-left: 1.55%;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  table td {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+  }
+
+  /* Лейбл (бывший заголовок / data-label) */
+  table td:before {
+    content: attr(data-label);
+    flex: 0 0 25%;     /* ЖЁСТКАЯ ширина 25% */
+    font-weight: bold;
+    text-transform: uppercase;
+    word-break: break-all;        /* Перенос слов внутри лейбла */
+  }
+
+  /* Значение */
+  table td {
+    flex: 0 0 75%;     /* ЖЁСТКАЯ ширина 75% */
+    word-break: break-all;        /* Перенос внутри текста */
+  }
+}
+
+@media (max-width: 550px) { 
+.participation .invite {
+    width: 100%;
+    margin-left: 3%;
+    margin-right: 3%;
+}
 }
