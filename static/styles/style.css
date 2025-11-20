@@ -84,12 +84,37 @@ span {
     letter-spacing: 1px;
   }
 
+.header-main {
+    display: flex;
+    width: 100%;
+    box-sizing: border-box;
+    position: fixed; 
+    top: 0;
+    z-index: 1000; 
+    background-color:#055783;
+    color: #fff;
+}
+
+.head-logo {
+    width: 10%;
+    padding-left: 0.5%;
+    padding-top: 0.5%;
+}
+
+.menu-cont {
+    display: flex;
+    width: 90%;
+    justify-content: center;
+    text-align: center;
+}
+
+
 .head {
     display: flex;
     width: 100%;
     justify-content: center;
     text-align: center;
-    margin-bottom: 15pt;
+    padding-top: 15pt;
     font-size: 20px;
 }
 
@@ -116,6 +141,7 @@ span {
     text-align: center;
     padding-bottom: 10pt;
     padding-top: 5px;
+    margin-top: 79px;
 }
 
 .name-logo {
@@ -156,25 +182,10 @@ span {
     padding: 15px;
 }
 
-.riseup {
-    --bgc: #3498db;
-    --br: 10px;
-    position: fixed;
-    bottom: 2%;
-    right: 1%;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: var(--br);
-    transition: 2s;
-    background-color:rgb(67, 133, 200, 0.1);
-    &:hover {
-        --bgc: #3c9ada;
-        --br: 40px;
-    }
-}
+.req-btn1>p {
+    font-size: 17pt;
+    margin-left: 0px;
 
-.riseup>p {
-    margin: 0;
 }
 
 .about {
@@ -195,7 +206,7 @@ span {
     margin-left: 6%;
     padding: 10px;
     text-align: left;
-    background-color: rgb(196, 205, 205);
+    background-color: rgba(61, 103, 219, 0.596);
     border-style: solid;
     border-width: 0.5px;
     word-wrap: break-word;
@@ -208,7 +219,7 @@ span {
     margin-right: 6%;
     padding: 10px;
     text-align: right;
-    background-color: rgb(196, 205, 205);
+    background-color: rgba(62, 155, 202, 0.771);
     border-style: solid;
     border-width: 0.5px;
     word-wrap: break-word;
@@ -220,7 +231,7 @@ span {
     margin-left: 6%;
     padding: 10px;
     text-align: center;
-    background-color: rgb(196, 205, 205);
+    background-color: rgba(61, 103, 219, 0.596);
     border-style: solid;
     border-width: 0.5px;
 }
@@ -440,7 +451,7 @@ span {
     padding: 15px;
 }
 
-.req-btn>p {
+.req-btn2>p {
     margin-left: 0px;
     font-size: 17pt;
 }
@@ -519,6 +530,8 @@ span {
 .left-end>iframe {
     margin:0 auto;
     width: 100%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
 }
 
 .copyright {
@@ -556,11 +569,78 @@ span {
         place-items: center;
         margin-left: 0px;
     }
+
+    .participation .invite {
+    width: 400px;
+    }
+
+    .invite>details>h5 {
+        text-align: center;
+    }
+
+    .sole {
+    display: block;
+    }
+
+    .bottom {
+        display: block;
+    }
+
+    .bottom>.left-end {
+        display: block;
+        width: 90%;
+    }
+
+    .bottom>.left-end>p {
+        padding-top: 5%;
+    }
+
+    .left-end>iframe {
+        width: 90%;
+        height: 380px;
+        margin-left: 0%;
+        margin-right: 5%;
+    }
+
+    .end-page {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: left;
+        padding-left: 2%;
+    }
+
+    .sole>.bottom {
+        width: 100%;
+    }
+
+    .conts>p {
+        word-break: break-all;
+    }
 }
 
 @media (max-width: 1100px){
     .menu-cont {
         display: flex;
+    }
+
+    .menu-btn {
+        width: 95%;
+    }
+    
+    .head>ul>li {
+        font-size: 13pt;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu-cont {
+        display: flex;
+        justify-content: right;
+        margin-right: 1%;
+        margin-top: 0.5%;
     }
 
     .menu-btn {
@@ -577,11 +657,12 @@ span {
     }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   table {
     border: 0;
-    width: 100%; 
+    width: 95%; 
     margin-left: 1.55%;
+    margin-right: 2%;
   }
 
   table thead {
@@ -618,9 +699,117 @@ span {
 }
 
 @media (max-width: 550px) { 
-.participation .invite {
-    width: 100%;
-    margin-left: 3%;
-    margin-right: 3%;
+
+    table {
+        width: 97%; 
+
+    }
+
+    .participation .invite {
+        width: 90%;
+        margin-left: 3%;
+        margin-right: 3%;
+    }
+
+    .about-info1 {
+        display: inline-block;
+        justify-content: center;
+        margin: 0;
+        margin-left: 2%;
+        margin-bottom: 1%;
+    }
+
+    .about-info2 {
+        display: inline-block;
+        justify-content: center;
+        text-align: left;
+        margin: 0;
+        margin-left: 2%;
+        margin-bottom: 1%;
+    }
+
+    .about-info3 {
+        display: inline-block;
+        justify-content: center;
+        margin: 0;
+        margin-left: 2%;
+    }
+
+    .about-info1>p {
+        font-size: 12pt;
+    }
+    .about-info2>p {
+        font-size: 12pt;
+    }
+
+    .partners>.partners-card {
+        margin-bottom: 2%;
+    }
+
+    .guests-card {
+        margin-bottom: 2%;
+    }
+
+    .guests-card>img {
+        height: 100%;
+        width: 300px;
+    }
+
+    .prize-card>img {
+        height: 100%;
+        width: 300px;
+    }
+
+    .invite {
+        height: 125px;
+        width: 200px;
+    }
+
+    .invite>details>h5 {
+        text-align: center;
+        margin-top: 5%;
+    }
+
+    .invite>details>summary {
+        padding-bottom: 5%;
+    }
 }
+
+@media (max-width: 320px) {
+    .invite {
+        height: 155px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 400px) {
+    .expert-card {
+        width: 90%;
+    }
+
+    .rectangle {
+        width: 90%;
+    }
+
+    .rectangle>p {
+        font-size: 12pt;
+    }
+
+    .guests-card {
+        padding: 5px;
+        width: 95%;
+    }
+
+    .guests-card>p {
+        font-size: 12pt;
+    }
+
+    .prize-card>img {
+        width: 100%;
+    }
+
+    .guests-card>img {
+        width: 90%;
+
+    }
 }
