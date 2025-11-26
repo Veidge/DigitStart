@@ -124,7 +124,6 @@ span {
     padding: 1em;
     text-decoration: none;
     color: white;
-    font-size: 15pt;
 }
 
 .nav-list a:hover{
@@ -210,9 +209,7 @@ span {
     background-color: rgba(61, 103, 219, 0.596);
     border-style: solid;
     border-width: 0.5px;
-    word-wrap: break-word;
 }
-
 
 .about-info2 {
     display: block;
@@ -457,6 +454,11 @@ span {
     font-size: 17pt;
 }
 
+.timer-cont {
+    display: block;
+    place-items: center;
+}
+
 .help-mail {
     display: inline;
     text-align: center;
@@ -543,6 +545,19 @@ span {
 }
 
 
+#timer {
+    font-family: Arial, sans-serif;
+    font-size: 20pt;
+    color: crimson;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #007bff;
+    border-radius: 10px;
+    width: 300px;
+    margin: 2opx auto;
+    margin-top: 20px;
+}
+
 
 
 
@@ -561,6 +576,96 @@ span {
         grid-template-rows: repeat(4);
         place-items: center;
     }
+
+    .nav-list>a {
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+  table {
+    border: 0;
+    width: 95%; 
+    margin-left: 1.55%;
+    margin-right: 2%;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  table td {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+  }
+
+  /* Лейбл (бывший заголовок / data-label) */
+  table td:before {
+    content: attr(data-label);
+    flex: 0 0 32%;     /* ЖЁСТКАЯ ширина 25% */
+    font-weight: bold;
+    text-transform: uppercase;
+    word-break: break-all;        /* Перенос слов внутри лейбла */
+    font-size: 9pt;
+}
+
+  /* Значение */
+  table td {
+    flex: 0 0 68%;     /* ЖЁСТКАЯ ширина 75% */
+    overflow-wrap: break-word;        /* Перенос внутри текста */
+    font-size: 11pt;
+}
+}
+
+@media screen and (max-width: 1000px) {
+  table {
+    border: 0;
+    width: 95%; 
+    margin-left: 1.55%;
+    margin-right: 2%;
+  }
+
+  table thead {
+    display: none;
+  }
+
+  table tr {
+    display: block;
+    margin-bottom: 15px;
+  }
+
+  table td {
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    gap: 10px;
+  }
+
+  /* Лейбл (бывший заголовок / data-label) */
+  table td:before {
+    content: attr(data-label);
+    flex: 0 0 32%;     /* ЖЁСТКАЯ ширина 25% */
+    font-weight: bold;
+    text-transform: uppercase;
+    word-break: break-all;        /* Перенос слов внутри лейбла */
+    font-size: 9pt;
+}
+
+  /* Значение */
+  table td {
+    flex: 0 0 68%;     /* ЖЁСТКАЯ ширина 75% */
+    overflow-wrap: break-word;        /* Перенос внутри текста */
+    font-size: 11pt;
+}
 }
 
 @media (max-width: 800px) {
@@ -582,6 +687,7 @@ span {
     }
     .nav-list {
         display: none;
+        margin-top: 61px;
     }   
 
     .drop:hover .nav-list {
@@ -661,54 +767,6 @@ span {
     }
 }
 
-@media (max-width: 1100px){
-    .nav-list>a {
-        font-size: 13pt;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-  table {
-    border: 0;
-    width: 95%; 
-    margin-left: 1.55%;
-    margin-right: 2%;
-  }
-
-  table thead {
-    display: none;
-  }
-
-  table tr {
-    display: block;
-    margin-bottom: 15px;
-  }
-
-  table td {
-    display: flex;
-    width: 100%;
-    padding: 10px 0;
-    border-bottom: 1px solid #ddd;
-    gap: 10px;
-  }
-
-  /* Лейбл (бывший заголовок / data-label) */
-  table td:before {
-    content: attr(data-label);
-    flex: 0 0 32%;     /* ЖЁСТКАЯ ширина 25% */
-    font-weight: bold;
-    text-transform: uppercase;
-    word-break: break-all;        /* Перенос слов внутри лейбла */
-    font-size: 9pt;
-}
-
-  /* Значение */
-  table td {
-    flex: 0 0 68%;     /* ЖЁСТКАЯ ширина 75% */
-    overflow-wrap: break-word;        /* Перенос внутри текста */
-    font-size: 11pt;
-}
-}
 
 @media (max-width: 550px) { 
 
@@ -788,13 +846,6 @@ span {
     }
 }
 
-@media (max-width: 320px) {
-    .invite {
-        height: 155px;
-        width: 200px;
-    }
-}
-
 @media (max-width: 400px) {
     .expert-card {
         width: 90%;
@@ -824,5 +875,21 @@ span {
     .guests-card>img {
         width: 90%;
 
+    }
+}
+
+
+@media (max-width: 375px) {
+    #timer {
+        width: 95%;
+        font-size: 15pt;
+        padding-inline: 0px;
+    }
+}
+
+@media (max-width: 320px) {
+    .invite {
+        height: 155px;
+        width: 200px;
     }
 }
