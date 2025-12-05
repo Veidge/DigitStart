@@ -1,5 +1,20 @@
+@import url('https://fonts.googleapis.com/css?family=Science Gothic&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Playfair Display&display=swap');
+@import url('https://fonts.googleapis.com/css?family=TikTok Sans&display=swap');
+
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 10%;
+    background-color: #000814;
+}
+
 body {
     margin: 0;
+    background-color: #c9bcbc46;
+    font-family: TikTok Sans, serif;
+    color: #fff;
 }
 
 p {
@@ -14,12 +29,18 @@ h1 {
     padding-top: 10px;
     margin: 10px;
     margin-bottom: 25pt;
+    font-family: Science Gothic, serif;
+    background-image: linear-gradient(to right, #ffffff, #b8bff7);
+    background-clip: text;
+    color: transparent;
 }
 
 h2 {
     margin-top: 15pt;
     margin-bottom: 15pt;
     text-align: center;
+    font-family: Playfair Display, serif;
+
 }
 
 h3 {
@@ -40,6 +61,7 @@ h5 {
     padding: 5pt;
     font-size: 14pt;
     margin: 5px;
+    font-family: Source Sans 3, serif;
 }
 
 span {
@@ -58,7 +80,7 @@ span {
  
  table {
     width: 1000px;
-    border: 1px solid #ccc;
+    border: 2px solid mediumslateblue;
     margin: auto;
     padding:0;
     border-collapse: collapse;
@@ -66,14 +88,18 @@ span {
   }
  
   table tr {
-    border: 1px solid #ddd;
+    border: 2px solid mediumslateblue;
     padding: 5px;
   }
  
   table th, table td {
     padding: 10px;
     text-align: left;
-    border-right: 1px solid #ddd;
+    border-right: 2px solid mediumslateblue;
+  }
+
+  table thead {
+    font-weight: bold;
   }
  
   table th {
@@ -113,6 +139,12 @@ span {
     text-align: center;
 }
 
+nav {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
 .nav-list {
     display: flex;
     justify-content: space-between;
@@ -124,6 +156,9 @@ span {
     padding: 1em;
     text-decoration: none;
     color: white;
+    font-size: 14pt;
+    box-sizing: border-box;
+    font-family: TikTok Sans, serif;
 }
 
 .nav-list a:hover{
@@ -137,6 +172,7 @@ span {
 .name {
     width: 100%;
     background-color: mediumslateblue;
+    /* background: radial-gradient(#4400ff 10%, #000000 100%); */
     color:azure;
     text-align: center;
     padding-bottom: 10pt;
@@ -159,11 +195,17 @@ span {
 
 .slogan {
     display: inline-block;
+    width: 50%;
     text-align: left;
     justify-content: left;
     padding: 5px;
     margin-top: 5px;
     margin-bottom: 5px;
+}
+.slogan h5 {
+    background: linear-gradient(to right, #020b39, #6f5be1);
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 .request1 {
@@ -172,9 +214,10 @@ span {
     padding: 5px;
     margin: 5px;
     margin-left: 17%;
+    margin-top: 50px;
 }
 
-.req-btn1 {
+/* .req-btn1 {
     display: inline-block;
     border-style: solid;
     border-width: 0.5px;
@@ -186,6 +229,64 @@ span {
     font-size: 17pt;
     margin-left: 0px;
 
+} */
+
+.req-btn1>button {
+    font-size: 20px;
+    padding: 0.6em 1em;
+    border: none;
+    outline: none;
+    color: white;
+    background: #e3e0e9;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    transition: all 0.3s;
+    animation: pulse 2s infinite;
+}
+
+.req-btn1 a {
+    color: hsl(0, 0%, 100%);
+}
+
+.req-btn1>button::before {
+    content: '';
+    background: linear-gradient(90deg, #fff, transparent, transparent, #fff);
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    z-index: -1;
+    background-size: 400%;
+    filter: blur(8px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+}
+
+@keyframes glowing-button {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 400% 0;
+    }
+}
+
+.req-btn1>button::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #301868;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
 }
 
 .about {
@@ -209,6 +310,8 @@ span {
     background-color: rgba(61, 103, 219, 0.596);
     border-style: solid;
     border-width: 0.5px;
+    border-radius: 1.5rem;
+    word-wrap: break-word;
 }
 
 .about-info2 {
@@ -220,6 +323,7 @@ span {
     background-color: rgba(62, 155, 202, 0.771);
     border-style: solid;
     border-width: 0.5px;
+    border-radius: 1.5rem;
     word-wrap: break-word;
 }
 
@@ -232,6 +336,8 @@ span {
     background-color: rgba(61, 103, 219, 0.596);
     border-style: solid;
     border-width: 0.5px;
+    border-radius: 0.5rem;
+
 }
 
 .about-info3>h6 {
@@ -327,11 +433,9 @@ span {
     display: inline-block;
     padding: 10px;
     text-align: center;
-    background-color: rgb(196, 205, 205);
-    border-style: solid;
-    border-width: 0.5px;
-    margin-left: 10px;
-    margin-right: 10px;
+    background-color: rgb(89, 97, 97);
+    margin: 10px;
+    border-radius: 0.5em;
 }
 
 
@@ -350,8 +454,10 @@ span {
 .guests-card {
     display: inline-block;
     padding: 10px;
+    margin: 10px 5px;
     text-align: center;
-    background-color: rgb(196, 205, 205);
+    background-color: rgb(89, 97, 97);
+    border-radius: 0.5em;
 }
 
 .prize {
@@ -369,7 +475,8 @@ span {
     padding: 10px;
     margin: 10px;
     text-align: center;
-    background-color: rgb(196, 205, 205);
+    background-color: rgb(89, 97, 97);
+    border-radius: 0.5em;
 }
 
 .prize-card>img {
@@ -396,6 +503,7 @@ span {
     position: relative;
     border-style: solid;
     border-width: 0.8px;
+    border-radius: 0.5rem;
     width: 500px;
     height: 100px;
     padding: 10pt;
@@ -441,17 +549,35 @@ span {
 
 .req-btn2 {
     display: inline-block;
-    border-style: solid;
-    border-width: 0.5px;
     text-align: center;
     justify-content: center;
-    margin: 10pt;
-    padding: 15px;
+    margin: 2em 1em;
+    padding: 0.5em 1em;
 }
 
-.req-btn2>p {
+.req-btn2 span {
+    margin: 0;
+    padding: 2em 0.5em;
+}
+
+.req-btn2 a {
     margin-left: 0px;
-    font-size: 17pt;
+    font-size: 16pt;
+    color: rgb(255, 255, 255);
+}
+
+.req-btn2 button {
+    background-color: #5942db;
+    box-shadow: 0 0 5px  #5942db,
+    0 0 25px  #5942db;
+    padding: 0.5em 2em;
+    cursor: pointer;
+    border-radius: 0.5em;
+}
+.req-btn2 button:hover {
+    box-shadow: 0 0 5px  #5942db,
+    0 0 25px  #5942db, 0 0 50px  #5942db,
+    0 0 100px  #5942db, 0 0 200px  #5942db;
 }
 
 .timer-cont {
@@ -477,8 +603,13 @@ span {
     margin: 0;
 }
 
+.help-mail a {
+    color: #007bff;
+}
+
 .sole {
     background-color:#dddddd;
+    color: #1b1b11;
 }
 
 .bottom {
@@ -512,6 +643,10 @@ span {
 .conts>p {
     padding-bottom: 10pt;
 }
+
+.conts span {
+        margin: 0;
+    }
 
 .left-end {
     width: 70%;
@@ -547,8 +682,8 @@ span {
 
 #timer {
     font-family: Arial, sans-serif;
-    font-size: 20pt;
-    color: crimson;
+    font-size: 19pt;
+    color: rgb(255, 0, 51);
     text-align: center;
     padding: 20px;
     border: 2px solid #007bff;
@@ -560,6 +695,57 @@ span {
 
 
 
+
+@media (max-width: 1150px) {
+    .sole {
+    display: block;
+    }
+
+    .bottom {
+        display: block;
+    }
+
+    .bottom>.left-end {
+        display: block;
+        width: 95%;
+        padding-left: 0%;
+    }
+
+    .bottom>.left-end>p {
+        padding-top: 5%;
+        font-size: 13pt;
+        margin-left: 0;
+    }
+
+    .left-end>iframe {
+        width: 100%;
+        height: 380px;
+        margin-left: 0%;
+        margin-right: 1%;
+    }
+
+    .end-page {
+        width: 100%;
+        text-align: center;
+    }
+
+    .copyright {
+        text-align: left;
+        padding-left: 2%;
+    }
+
+    .sole>.bottom {
+        width: 100%;
+    }
+
+    .conts>p {
+        word-break: break-all;
+    }
+
+    .conts span {
+        margin: 0;
+    }
+}
 
 @media (max-width: 1100px){
     .head {
@@ -577,7 +763,7 @@ span {
         place-items: center;
     }
 
-    .nav-list>a {
+    .nav-list a {
         font-size: 12pt;
     }
 }
@@ -603,7 +789,7 @@ span {
     display: flex;
     width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid mediumslateblue;
     gap: 10px;
   }
 
@@ -615,6 +801,7 @@ span {
     text-transform: uppercase;
     word-break: break-all;        /* Перенос слов внутри лейбла */
     font-size: 9pt;
+    padding-right: 2px;
 }
 
   /* Значение */
@@ -646,7 +833,7 @@ span {
     display: flex;
     width: 100%;
     padding: 10px 0;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 2px solid mediumslateblue;
     gap: 10px;
   }
 
@@ -685,12 +872,21 @@ span {
         color: white;
         cursor: pointer;
     }
+
     .nav-list {
         display: none;
         margin-top: 61px;
-    }   
+        transition: right 0.3s;
+    }  
 
     .drop:hover .nav-list {
+        display: block;
+        position: absolute;
+        right: 1px;
+        background-color: rgb(55, 54, 54);
+    }
+    
+    .drop:hover nav {
         display: block;
         position: absolute;
         right: 1px;
@@ -728,7 +924,7 @@ span {
 
     .bottom>.left-end {
         display: block;
-        width: 90%;
+        width: 92%;
         padding-left: 0%;
     }
 
@@ -762,7 +958,7 @@ span {
         word-break: break-all;
     }
 
-    .conts>p>span {
+    .conts span {
         margin: 0;
     }
 }
@@ -775,34 +971,41 @@ span {
 
     }
 
+    .slogan {
+        width: 97%;
+    }
+
     .participation .invite {
-        width: 90%;
-        margin-left: 3%;
+        width: 92%;
+        margin-left: 0%;
         margin-right: 3%;
     }
 
     .about-info1 {
         display: inline-block;
+        width: 92%;
         justify-content: center;
         margin: 0;
-        margin-left: 2%;
+        margin-left: 0%;
         margin-bottom: 1%;
     }
 
     .about-info2 {
         display: inline-block;
+        width: 92%;
         justify-content: center;
         text-align: left;
         margin: 0;
-        margin-left: 2%;
+        margin-left: 0%;
         margin-bottom: 1%;
     }
 
     .about-info3 {
         display: inline-block;
+        width: 92%;
         justify-content: center;
         margin: 0;
-        margin-left: 2%;
+        margin-left: 0%;
     }
 
     .about-info1>p {
@@ -848,19 +1051,19 @@ span {
 
 @media (max-width: 400px) {
     .expert-card {
-        width: 90%;
+        width: 92%;
     }
 
     .rectangle {
-        width: 90%;
+        width: 92%;
     }
 
     .rectangle>p {
-        font-size: 12pt;
+        font-size: 11pt;
     }
 
     .guests-card {
-        padding: 5px;
+        padding: 15px 0px;
         width: 95%;
     }
 
@@ -887,9 +1090,9 @@ span {
     }
 }
 
-@media (max-width: 320px) {
+@media (width < 370px) {
     .invite {
-        height: 155px;
+        height: 170px;
         width: 200px;
     }
 }
