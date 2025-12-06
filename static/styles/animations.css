@@ -1,16 +1,16 @@
-.about-info1 {
+.about-info1.active {
   opacity: 0;
   animation: ani 2.5s forwards;
   transition: opacity 0.6s, transform 0.6s;
 }
 
-.about-info2 {
+.about-info2.active {
   opacity: 0;
   animation: ani 2.5s forwards;
   transition: opacity 0.6s, transform 0.6s;
 }
 
-.about-info3 {
+.about-info3.active {
   opacity: 0;
   animation: ani 2.5s forwards;
   transition: opacity 0.6s, transform 0.6s;

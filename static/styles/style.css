@@ -529,6 +529,15 @@ nav {
     font-size: 14pt;
 }
 
+details[open] summary ~ * {
+  animation: sweep .5s ease-in-out;
+}
+
+@keyframes sweep {
+  0%    {opacity: 0; margin-bottom: -10px}
+  100%  {opacity: 1; margin-bottom: 0px}
+}
+
 .invite>details>h5 {
     position: absolute;
     bottom: 0;
