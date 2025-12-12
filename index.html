@@ -27,16 +27,19 @@
         <header>
             <div class="navbar">
                 <div class="riseup">
-                    <a href="#top"> <img src="static/pictures/cryptonit_without_back.png" alt="Логотип" width="37" height="55"> </a>   
+                    <a href="#top"> <img src="static/pictures/logo.png" alt="Логотип"> </a>
+                    <div class="riseup-logo">
+                        <a href="#top"><img src="static/pictures/logo_text.png" alt="Логотип"></a>
+                    </div>
                 </div>
                 <div class="drop">
                     <div class="nav-list">
                         <nav>
                             <a href="#about-id">О конференции</a>
+                            <a href="#noms-id">Номинации</a>
                             <a href="#prize-id">Награды</a>
                             <a href="#part-id">Участие</a>
                             <a href="#bottom-id">Контакты</a>
-                            <a href="#">Пользовательское соглашение</a>
                         </nav>
                     </div>
                     <button class="nav-btn">&#9776;</button>
@@ -53,15 +56,8 @@
 
         <!-- Слоганы (фразы) -->
         <div class="slogan">
-            <h5 class="anim slog">WIN IF “ЦИФРОВОЙ СТАРТ” ELSE “TRY AGAIN”</h5>
+            <!-- <h5 class="anim slog">WIN IF “ЦИФРОВОЙ СТАРТ” ELSE “TRY AGAIN”</h5> -->
             <h5 class="anim slog">РАЗРАБАТЫВАЙТЕ БИЗНЕС ПРОЕКТЫ, ПРЕДСТАВЛЯЙТЕ СВОИ ИДЕИ, НАХОДИТЕ ПОДДЕРЖКУ И МОТИВАЦИЮ С НАМИ!</h5>
-        </div>
-
-        <!-- Кнопка подачи заявки -->
-        <div class="request1">
-            <div class="req-btn1">        
-                <button role="button"><span class="bold-text"><a href="https://forms.yandex.ru/u/6912fec7d046886fb6f9ca5e" target="_blank" class="request-button pulse"> Подать заявку </a></span></button>
-            </div>
         </div>
 
         <!-- Блок "О конференции" -->
@@ -79,9 +75,24 @@
                 <p>Жюри: Руководители ИТ-компаний, ведущие специалисты, предприниматели, представители впасти.</p>
             </div>
 
-            <div class="anim about-info3">
+            <!-- <div class="anim about-info3">
                 <img src="https://kpfu.ru/portal/docs/F_335384247/WhatsApp.Image.2020_06_23.at.21.03.39.jpg" alt="Победы НАШИХ" width="690" height="300">
                 <h6>Стараемся для Вас!</h6>
+            </div> -->
+
+            <div class="about-buttons">
+                <!-- Кнопка подачи заявки -->
+                <div class="request1">
+                    <div class="req-btn1">        
+                        <button role="button"><span class="bold-text"><a href="https://forms.yandex.ru/u/6912fec7d046886fb6f9ca5e" target="_blank" class="request-button pulse"> Подать заявку </a></span></button>
+                    </div>
+                </div>
+    
+                <div class="doc-about">
+                    <div class="doc-btn">        
+                        <button role="button"><span class="bold-text"><a href="#" target="_blank" class="request-button pulse"> Положение о конференции </a></span></button>
+                    </div>
+                </div>
             </div>
 
 
@@ -90,28 +101,78 @@
         <!-- Блок "Номинации" (таблица) -->
         <div class="nominations">
             <h2 id="noms-id">Номинации</h2>
-            <h5>Выберите секцию, которая наилучшим образом соответствует вашему проекту.</h5>
-            
-            <!-- ТАБЛИЦА -->
-            <div>
-                <table class="nominats">
-                    <thead>
-                    <tr>
-                        <td>Программирование и разработка</td>
-                        <td>Цифровой дизайн и медиа</td>
-                        <td>Инфраструктура и безопасность</td>
-                        <td>Инновационные решения (AI/ML)</td>
-                        <td>Социальный ИТ-проект</td>
-                    </tr>
-                    </thead>
-                    <tr>
-                        <td data-label="Программирование и разработка">Web-сайты, мобильные приложения, боты, прикладное ПО, решения для Интернета вещей (IoT).</td>
-                        <td data-label="Цифровой дизайн и медиа">Проекты по UX/UI дизайну, компьютерной графике, 3D-моделированию, а также VR/AR-разработки.</td>
-                        <td data-label="Инфраструктура и безопасность">Проекты, связанные с сетевым администрированием, оптимизацией ИТ-инфраструктуры, а также решения в области кибербезопасности и защиты данных.</td>
-                        <td data-label="Инновационные решения (AI/ML)">Проекты, использующие технологии искусственного интеллекта, машинного обучения и анализа больших данных для решения сложных задач.</td>
-                        <td data-label="Социальный ИТ-проект">Решения, направленные на повышение качества жизни в городе, проекты в сферах образования, экологии или здравоохранения.</td>
-                    </tr>
-                </table>
+            <h5>Выберите секцию, которая наилучшим образом соответствует Вашему проекту.</h5>
+            <!-- Карты номинаций -->
+            <div class="noms-cont">
+                <div class="anim nom-card">
+                    <div class="nom-block-card">
+                        <div class="nom-card-image">
+                            <img src="/static/pictures/prog_1.png" alt="Изображение для номинации" class="noms-cards">
+                        </div>
+                        <div class="nom-title">
+                            <h5>Программирование и разработка</h5>
+                        </div>
+                        <div class="nom-text">
+                            <p>Web-сайты, мобильные приложения, боты, прикладное ПО, решения для Интернета вещей (IoT).</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim nom-card">
+                    <div class="nom-block-card">
+                        <div class="nom-card-image">
+                            <img src="/static/pictures/disign_2.png" alt="Изображение для номинации" class="noms-cards">
+                        </div>
+                        <div class="nom-title">
+                            <h5>Цифровой дизайн и медиа</h5>
+                        </div>
+                        <div class="nom-text">
+                            <p>Проекты по UX/UI дизайну, компьютерной графике, 3D-моделированию, а также VR/AR-разработки.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim nom-card">
+                    <div class="nom-block-card">
+                        <div class="nom-card-image">
+                            <img src="/static/pictures/secure_3.png" alt="Изображение для номинации" class="noms-cards">
+                        </div>
+                        <div class="nom-title">
+                            <h5>Инфраструктура и безопасность</h5>
+                        </div>
+                        <div class="nom-text">
+                            <p>Проекты, связанные с сетевым администрированием, оптимизацией ИТ-инфраструктуры, кибербезопасность и защиты данных.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim nom-card">
+                    <div class="nom-block-card">
+                        <div class="nom-card-image">
+                            <img src="/static/pictures/ai_ml_4.png" alt="Изображение для номинации" class="noms-cards">
+                        </div>
+                        <div class="nom-title">
+                            <h5>Инновационные решения (AI/ML)</h5>
+                        </div>
+                        <div class="nom-text">
+                            <p>Проекты, использующие технологии искусственного интеллекта, машинного обучения и анализа больших данных для решения сложных задач</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="anim nom-card">
+                    <div class="nom-block-card">
+                        <div class="nom-card-image">
+                            <img src="/static/pictures/social_5.png" alt="Изображение для номинации" class="noms-cards">
+                        </div>
+                        <div class="nom-title">
+                            <h5>Социальный ИТ-проект</h5>
+                        </div>
+                        <div class="nom-text">
+                            <p>Решения, направленные на повышение качества жизни в городе, проекты в сферах образования, экологии или здравоохранения</p>
+                        </div>
+                    </div>
+                </div>
             </div>
 
         </div>
@@ -159,7 +220,7 @@
 
         <!-- Блок "Партнёры" (карточки с рамкой) -->
          <div class="partners">
-            <h2>Партнёры</h2>
+            <h2>Наши партнёры</h2>
             <div class="anim partners-card">
                 <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
                 <p>ООО "Логасофт ПЛЮС"</p>
@@ -313,8 +374,16 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright">
-                <p>© ООО «Асандра», 2025</p>
+            <div class="end-bot-cont">
+                <div class="end-logo">
+                    <img src="static/pictures/logo_text.png" alt="Логотип">
+                    <div class="end-logo-alt">
+                        <img src="static/pictures/logo.png" alt="Логотип">
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© ООО «Асандра», 2025</p>
+                </div>
             </div>
         </div>
 

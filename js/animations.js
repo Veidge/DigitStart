@@ -3,7 +3,7 @@
 let options = {
     root: null,
     rootMargin: '5px',
-    threshold: 0.5
+    threshold: 0.3
 }
 
 let callback = function(entries, observer) {

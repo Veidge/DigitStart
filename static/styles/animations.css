@@ -1,13 +1,28 @@
+.about-info1 {
+  transition: all 2s;
+  opacity: 0;
+}
+
 .about-info1.active {
   opacity: 0;
   animation: ani 2.5s forwards;
   transition: opacity 0.6s, transform 0.6s;
 }
 
+.about-info2 {
+  transition: all 2s;
+  opacity: 0;
+}
+
 .about-info2.active {
   opacity: 0;
   animation: ani 2.5s forwards;
   transition: opacity 0.6s, transform 0.6s;
+}
+
+.about-info3 {
+  transition: all 2s;
+  opacity: 0;
 }
 
 .about-info3.active {
@@ -116,6 +131,23 @@ pulse animation {
 }
 
 .anim.prize-card.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* .anim.nom-card.active {
+  transform: translateX(-150%);
+  animation: ani-expert 1.5s forwards;
+  transition: opacity 0.6s, transform 0.6s;
+} */
+
+.anim.nom-card {
+  transform: translateY(20%);
+  transition: all 2s;
+  opacity: 0;
+}
+
+.anim.nom-card.active {
   transform: translateY(0);
   opacity: 1;
 }
