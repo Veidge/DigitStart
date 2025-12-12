@@ -13,7 +13,7 @@
         </style>
         <style>
             .round {
-                width: 90px; height: 90px; /* Ширина и высота */
+                width: 100px; height: 100px; /* Ширина и высота */
                 border-radius: 50%; /* Превращаем в круг */
                 background: url(/example/image/shark.jpg) no-repeat -70px 0; /* Параметры фона */
                 background-size: auto 300px; /* Высота фотографии равна высоте элемента */
@@ -51,28 +51,30 @@
             <div class="name-logo">
                 <h1>ЦИФРОВОЙ СТАРТ</h1>
             </div>
-            <h3>конференция студенческих IT-проектов в Вологде</h3>
-        </div>
-
-        <!-- Слоганы (фразы) -->
-        <div class="slogan">
-            <!-- <h5 class="anim slog">WIN IF “ЦИФРОВОЙ СТАРТ” ELSE “TRY AGAIN”</h5> -->
-            <h5 class="anim slog">РАЗРАБАТЫВАЙТЕ БИЗНЕС ПРОЕКТЫ, ПРЕДСТАВЛЯЙТЕ СВОИ ИДЕИ, НАХОДИТЕ ПОДДЕРЖКУ И МОТИВАЦИЮ С НАМИ!</h5>
+            <h3>Конференция студенческих IT-проектов в Вологде</h3>
         </div>
 
         <!-- Блок "О конференции" -->
         <div class="about">
             <h2 id="about-id">О конференции</h2>
 
-            <div class="anim about-info1">
-                <p>Конференция «Цифровой старт» — это ключевое событие для студентов ИТ-специальностей среднего профессионального образования. 
-                Наша цель — создать площадку, где теоретические знания превращаются в реальные, практически применимые проекты. Мы ждем проекты, которые демонстрируют инновационный подход в решении актуальных задач — от оптимизации бизнес-процессов до улучшения городской инфраструктуры.
-                </p>
-            </div>
-
-            <div class="anim about-info2">
-                <p>Формат: Очный конкурс-защита проектов.</p>
-                <p>Жюри: Руководители ИТ-компаний, ведущие специалисты, предприниматели, представители впасти.</p>
+            <div class="about-block">
+                <div class="anim about-info1">
+                    <p>Конференция «Цифровой старт» – это ключевое событие для 
+                        студентов ИТ-специальностей среднего профессионального 
+                        образования. Наша цель – создать площадку, где теоретические 
+                        знания превращаются в реальные, практически применимые 
+                        проекты. Мы ждем проекты, которые демонстрируют 
+                        инновационный подход в решении актуальных задач – от 
+                        оптимизации бизнес-процессов до улучшения городской 
+                        инфраструктуры. 
+                    </p>
+                </div>
+    
+                <div class="anim about-info2">
+                    <p>Формат: Очный конкурс-защита проектов. </p>
+                    <p>Жюри: Руководители ИТ-компаний, ведущие специалисты, предприниматели, представители власти. </p>
+                </div>
             </div>
 
             <!-- <div class="anim about-info3">
@@ -90,7 +92,7 @@
     
                 <div class="doc-about">
                     <div class="doc-btn">        
-                        <button role="button"><span class="bold-text"><a href="#" target="_blank" class="request-button pulse"> Положение о конференции </a></span></button>
+                        <button role="button"><span class="bold-text"><a href="/static/documents/Положение_Цифровой_старт_Вологда.pdf" target="_blank" class="request-button pulse"> Положение о конференции </a></span></button>
                     </div>
                 </div>
             </div>
@@ -186,33 +188,33 @@
                 <div class="anim expert-card">
                     <div id="triangle_left"></div>
                     <div class="circle">
-                        <img src="https://i.pinimg.com/736x/36/46/44/364644f13972f9af4cae2a19f0a7eb4a.jpg" alt="" class="round">
+                        <img src="/static/pictures/expert_1.jpg" alt="Фото эксперта" class="round">
                     </div>
                     <div class="rectangle">
-                        <p>Валентин Генадиевич Простоев</p>
-                        <p>Должность: охранник</p>
+                        <p>Дудина Анна Андреевна</p>
+                        <p>Директор компании «Асандра», молодой ученый </p>
                     </div>
                 </div>
                 
                 <div class="anim expert-card">
                     <div id="triangle_left"></div>
                     <div class="circle">
-                        <img src="https://i.pinimg.com/736x/36/46/44/364644f13972f9af4cae2a19f0a7eb4a.jpg" alt="" class="round">
+                        <img src="/static/pictures/expert_unknown.png" alt="Фото эксперта" class="round">
                     </div>
                     <div class="rectangle">
-                        <p>Валентин Генадиевич Простоев</p>
-                        <p>Должность: охранник</p>
+                        <p>Валентин Генадиевич Козлов</p>
+                        <p>Технический директор</p>
                     </div>
                 </div>
     
                 <div class="anim expert-card">
                     <div id="triangle_left"></div>
                     <div class="circle">
-                        <img src="https://i.pinimg.com/736x/36/46/44/364644f13972f9af4cae2a19f0a7eb4a.jpg" alt="" class="round">
+                        <img src="/static/pictures/expert_unknown.png" alt="Фото эксперта" class="round">
                     </div>
                     <div class="rectangle">
-                        <p>Валентин Генадиевич Простоев</p>
-                        <p>Должность: охранник</p>
+                        <p>Александр Сергеевич Шевченко</p>
+                        <p>HR-менеджер</p>
                     </div>
                 </div>
             </div>
@@ -223,21 +225,21 @@
             <h2>Наши партнёры</h2>
             <div class="anim partners-card">
                 <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
-                <p>ООО "Логасофт ПЛЮС"</p>
+                <p>ООО «Логасофт ПЛЮС»</p>
 
                 <!-- КАРТОЧКИ -->
 
             </div>
             <div class="anim partners-card">
-                <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
-                <p>ООО "Логасофт ПЛЮС"</p>
+                <img src="static/pictures/Монтажная область 1 копия.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
+                <p>ООО «Асандра»</p>
 
                 <!-- КАРТОЧКИ -->
 
             </div>
             <div class="anim partners-card">
-                <img src="static\pictures\S_height.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
-                <p>ООО "Логасофт ПЛЮС"</p>
+                <img src="static\pictures/иконка_партнеры.png" alt="Логотип ООО 'Логасофт ПЛЮС'" width="220" height="220">
+                <p>ООО «MeelTechComp»</p>
 
                 <!-- КАРТОЧКИ -->
 
@@ -245,54 +247,49 @@
         </div>
 
         <!-- Блок "Почётные гости" (карточки без рамки) -->
-        <div class="guests">
+        <!-- <div class="guests">
             <h2>Почётные гости</h2>
             <div class="anim guests-card">
                 <img src="https://cdnimages.absatz.media/images/2022.08/original/1920_62fb530fb09c601cb9c0f0d7.jpg" alt="Дмитрий Нагиев" width="300" height="200">
                 <p>Дмитрий Нагиев</p>
-                <p>Маркетинг и бизнес-раскрутка</p>
+                <p>Маркетинг и бизнес-раскрутка</p> -->
 
                 <!-- КАРТОЧКИ -->
 
-            </div>
+            <!-- </div>
             <div class="anim guests-card">
                 <img src="https://bloknot.ru/wp-content/uploads/2016/09/10-3.jpg" alt="Александр Ревва" width="230" height="200">
                 <p>Александр Ревва</p>
-                <p>Продвижение и модернизация</p>
+                <p>Продвижение и модернизация</p> -->
 
                 <!-- КАРТОЧКИ -->
 
-            </div>
+            <!-- </div>
             <div class="anim guests-card">
                 <img src="https://i.timeout.ru/pix/494646.jpeg" alt="Иван Охлобыстин" width="230" height="200">
                 <p>Иван Охлобыстин</p>
-                <p>Критика и увеличение охвата</p>
+                <p>Критика и увеличение охвата</p> -->
 
                 <!-- КАРТОЧКИ -->
 
-            </div>
-        </div>
+            <!-- </div>
+        </div> -->
         
         <!-- Блок "Награждение" (карточки с рамкой и фоном вокруг рамки) -->
         <div class="prize">
             <h2 id="prize-id">Награждение</h2>
             <h5>Мы ценим ваш труд и талант! Победители в каждой из пяти номинаций получат:</h5>
-            <div class="anim prize-card">
-                <img src="https://www.lasorsa.com/wp-content/uploads/2016/09/Screen-Shot-2016-09-12-at-1.33.39-PM-1024x555.png" alt="Дмитрий Нагиев" width="330" height="200">
-                <h5>Ценные призы</h5>
-                <p>подарки от партнеров<br><br/></p>
-            </div>
-
-            <div class="anim prize-card">
-                <img src="https://vplicei.org/wp-content/uploads/2022/04/%D0%94%D0%B8%D0%BF%D0%BB%D0%BE%D0%BC-%D1%86%D0%B5%D0%BD%D1%82%D1%80%D0%B0%D0%98%D0%A2.jpg" alt="Дмитрий Нагиев" width="300" height="200">
-                <h5>Дипломы</h5>
-                <p>I, II и III степень<br><br/></p>
-            </div>
-
-            <div class="anim prize-card">
-                <img src="https://www.gazprom-neft.ru/upload/medialibrary/1a5/partnership.jpg" alt="Дмитрий Нагиев" width="300" height="200">
-                <h5>Специальные предложения</h5>
-                <p>возможность стажировок и <br>приоритет резюме<br/></p>
+            <div class="prize-cont">
+                <div class="prize-card">
+                    <img src="/static/pictures/иконка_диплом.png" alt="Диплом">
+                </div>
+                <div class="prize-text">
+                    <p><b>Ценные призы: </b>подарки от партнеров<br><br/> </p>
+    
+                    <p><b>Дипломы: </b> I, II и III степень <br><br/> </p>
+                
+                    <p><b>Специальные предложения: </b>предложения стажировок и приоритет в рассмотрении резюме</p>
+                </div>
             </div>
         </div>
 
@@ -339,7 +336,7 @@
                     </div>
                 </div>
                 <!-- <h5>Мы принимаем Вас всех!</h5> -->
-                <h5>Не упустите ту самую возможность быть тем, кем Вы мечтаете! </h5>
+                <h5>Участие в нашей конференции – это Ваш шанс стать частью активного IT-сообщества!</h5>
                 <div class="request2">
                     <div class="req-btn2">
                         <button role="button"><span class="bold-text"><a href="https://forms.yandex.ru/u/6912fec7d046886fb6f9ca5e" target="_blank"> Подать заявку </a></span></button>
@@ -368,8 +365,8 @@
                     <h4>Контакты</h4>
                     <div class="contacts">
                         <div class="conts">
-                            <p><b>почта:</b> <span><a href="mailto:contest@asandra.ru">contest@asandra.ru</a></span> </p>
-                            <p><b>телефон:</b> <a href="tel:+79114454090">+79114454090</a></p>
+                            <p><b>Почта:</b> <span><a href="mailto:contest@asandra.ru">contest@asandra.ru</a></span> </p>
+                            <p><b>Телефон:</b> <a href="tel:+79114454090">+79114454090</a></p>
                         </div>
                     </div>
                 </div>
